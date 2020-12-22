@@ -1,3 +1,6 @@
+html{
+        scroll-behavior:smooth;
+    }
 body{
     margin: 0px ;
     padding: 0px;
@@ -95,5 +98,48 @@ nav{
 }
 .contact-btn:hover{
     background-color: #111111;  
+}
+#about{
+    
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    
+}
+.about-text{
+    font-family: calibri;
+    width: 50%;
+}
+.about-text h1{
+    font-size: 5rem;
+    color: #17d1ac;
+}
+.about-text h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.about-taxt h1,h2{
+    margin:0px;
+    padding: 0px;
+}
+.about-text p{
+    font-size: 1.2rem;
+    color:#FFFFFF;
+}
+.about-text button{
+    width: 180px;
+    height: 40px;
+    border-radius: :none;
+    outline: none;
+    background-color: #17d1ac;
+}
+.about-text button:hover{
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
 }
 
