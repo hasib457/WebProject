@@ -365,6 +365,55 @@ nav{
     background-color: #FFFFFF;
     transition: all ease 0.3s;
 }
+#services{
+  width:100%;
+  height:150vh;
+  box-sizing: border-box;
+  font-family: calibri;
+  display:inline;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px ;
+  }
+
+  .service_head h1{
+  columns:#bb0a0a;
+  font-size: 3rem;
+  margin: 0px;
+  padding: 0px;
+  }
+  .service_head p{
+  color:#FFFFFF;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
+  }
+  .service_head{
+  text-align: center;
+  margin: 20px 0px;
+  }
+  .service_box1,.service_box2{
+      background-color: #FFFFFF;
+      height: 500px;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+      position: relative;
+      display: inline-block;
+      width: 32%;
+      }
+      .service_box1{
+          margin-left: 16%;
+      }
+  
+      .box_container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      }
+
 
 #contact-btn{
 	width: 100%;
@@ -539,3 +588,73 @@ nav{
 	transform: scale(1.04);
 	transition: all ease 0.1s;
 }
+=======
+      .service_image1{
+          width: 100%;
+          height: 70%;
+          background-image: url("../images/mob.png");
+          background-position: center;
+          background-size: cover;
+          
+          }
+          
+      .service_image2{
+      width: 100%;
+      height: 70%;
+      background-image: url("../images/web.png");
+      background-position: center;
+      background-size: cover;
+      
+      }
+      service_image img{
+      width:40%;
+      height: 60%;
+      
+      }
+      .service_text{
+      width: 100%;
+      height: 30%;
+      background-color:#3eb8f1;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .service_text a{
+      margin: 0px;
+      color:#FFFFFF;
+      font-size: 1.1rem;
+      font-family: calibri;
+      display: block;
+      display: -webkit-box;
+      max-width: 80%;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+      .service_text a:hover{
+      color:rgba(255,255,255,0.50)
+      }
+      .service_type{
+      font-family: calibri;
+      color:#FFFFFF;
+      background-color: #151515;
+      padding: 10px 15px;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+      }
+      .service_box1:hover{
+          transform:translateY(-10px);
+          transition: all ease 0.3s;
+          }
+          .service_box2:hover{
+              transform:translateY(-10px);
+              transition: all ease 0.3s;
+              }
+>>>>>>> 1a40eca55b42ed6b296e9ab093e55b0e383056ab
