@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+
+    if(isset($_POST["name"])){
+	$name=$_POST["name"];
+        $message=$_POST["message"];
+        $email=$_POST["email"];
+        $connect=mysqli_connect("localhost","root","","webProject");
+        $quary="INSERT INTO `contacts`( `name`, `date`, `email`, `msg`) VALUES ('$name',now(),'$email','$message')";
+        mysqli_query($connect,$quary);
+     }   
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -148,16 +158,16 @@
     
     <!--contact-form------------------->
 	<section id="contact-form">
-	<form>
+	<form method="post">
 	<div class="contact-left">
 	<h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Write to us</font></h1>
 	<div class="f-name">
 	<font >Name</font>
-	<input type="text" placeholder="Full Name"/>
+	<input type="text" name="name" placeholder="Full Name"/>
 	</div>
 	<div class="f-email">
 	<font >Email</font>
-	<input type="email" placeholder="Example@gmail.com"/>
+	<input type="email" name="email" placeholder="Example@gmail.com"/>
 	</div>
 	</div>
 	<div class="contact-right">
@@ -171,11 +181,4 @@
 	</form>
 	</section>
   
-    
-    
-    
-=======
-
-  
 </body>
->>>>>>> 1a40eca55b42ed6b296e9ab093e55b0e383056ab
