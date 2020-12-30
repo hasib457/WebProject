@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";;
+}
+.header{
+    background-color:darkslateblue;
+    margin: 0 10%;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 1px;
+}
+.title{
+    font-size: larger;
+    color: white;
+    
+    text-align: center;
+    margin: 1% 0;
+    padding: 1.5% 0;
+}
+.table{
+    margin: 0 10%;
+    background-color: white;
+    border: 2px solid rgba(71, 61, 139, 0.2);
+    border-top: none;
+}
+
+.table th, td{
+    padding: 7px 35px;
+    text-align: center;
+}
+.table tr:nth-child(2n), thead{
+    background-color: #f7f7f7;
+}
+.button-wrapper button{
+    background-color: darkslateblue;
+    border: darkslateblue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;  
+}
+#btn-logout button{
+    margin: 0 10.5%;
+    margin-top: 30px;
+    padding: 10px;
+    transform: scale(1.3);
+}

@@ -48,7 +48,7 @@
                             
                             <td>
                                 <div class="button-wrapper">
-                                    <a class="btn" href="mailto:<?php echo $value['crs_id'] ?>">CONTACT</a>
+                                    <a href="mailto:<?php echo $value['crs_id'] ?>"> <button> CONTACT </button> </a>
                                 </div>
                             </td>
                     </tr>
@@ -57,7 +57,7 @@
         </table>
     </div>
     <div class="button-wrapper">
-        <a class="btn" href="logout.php" >LOGOUT</a>
+        <a id = "btn-logout" href="logout.php" > <button> LOGOUT </button> </a>
     </div>    
 </body>
 </html>
